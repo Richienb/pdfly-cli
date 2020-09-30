@@ -1,13 +1,9 @@
 const test = require("ava")
-const theModule = require(".")
+const parsePdf = require("pdf-parse")
+const execa = require("execa")
 
-test("main", t => {
-	t.throws(() => {
-		theModule(123)
-	}, {
-		instanceOf: TypeError,
-		message: "Expected a string, got number"
-	})
-
-	t.is(theModule("unicorns"), "unicorns & rainbows")
+test("main", async t => {
+	const { stdout: pdf } = await execa("./cli.js", ["fixture.html"], { encoding: "" })
+	const { text: pdfText } = await parsePdf(pdf)
+	t.is(pdfText.trim(), "Hello World")
 })

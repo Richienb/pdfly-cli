@@ -1,27 +1,46 @@
 {
-	"name": "the-module",
+	"name": "pdfly-cli",
 	"version": "0.0.0",
-	"description": "My awesome module.",
-	"repository": "https://github.com/Richienb/the-module.git",
+	"description": "Generate a pdf from html.",
+	"repository": "https://github.com/Richienb/pdfly-cli.git",
 	"author": "Richie Bendall <richiebendall@gmail.com>",
 	"license": "MIT",
-	"main": "index.js",
+	"bin": {
+		"pdfly": "cli.js"
+	},
 	"files": [
-		"index.js",
-		"index.d.ts"
+		"cli.js"
 	],
 	"engines": {
-		"node": ">=10"
+		"node": "^10.17 || >=11.14"
 	},
 	"scripts": {
 		"lint": "xo",
 		"test": "xo && ava"
 	},
-	"keywords": [],
-	"dependencies": {},
+	"keywords": [
+		"pdf",
+		"html",
+		"cli",
+		"generate",
+		"convert",
+		"stdin",
+		"stdout",
+		"pipe",
+		"write",
+		"browser"
+	],
+	"dependencies": {
+		"get-stdin": "^8.0.0",
+		"meow": "^7.1.1",
+		"pdfly": "^1.0.0",
+		"update-notifier": "^5.0.0"
+	},
 	"devDependencies": {
 		"ava": "^3.12.1",
 		"eslint-config-richienb": "^0.4.2",
+		"execa": "^4.0.3",
+		"pdf-parse": "^1.1.1",
 		"xo": "^0.33.1"
 	},
 	"xo": {
