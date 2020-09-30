@@ -19,7 +19,7 @@ const { input, flags, pkg } = meow(`
 	  --margin-bottom The size of the bottom margin in the resulting pdf.
 	  --margin-left The size of the left margin in the resulting pdf.
 	  --margin-right The size of the right margin in the resulting pdf.
-	  --format The paper format the resulting pdf. Overrides --height and --width. Can be Letter, Legal, Tabloid, Ledger, A0, A1, A2, A3, A4, A5 or A6.
+	  --format The paper format of the resulting pdf. Overrides --height and --width. Can be Letter, Legal, Tabloid, Ledger, A0, A1, A2, A3, A4, A5 or A6.
 	  --height The height of the resulting pdf. Can be a labelled unit or a number which will be treated as pixels.
 	  --width The width of the resulting pdf. Can be a labelled unit or a number which will be treated as pixels.
 	  --pages The page ranges to save. For example: "1-5, 8, 11-13". Saves all pages by default.
