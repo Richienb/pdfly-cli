@@ -1,6 +1,6 @@
 {
 	"name": "pdfly-cli",
-	"version": "0.0.0",
+	"version": "1.0.0",
 	"description": "Generate a pdf from html.",
 	"repository": "https://github.com/Richienb/pdfly-cli.git",
 	"author": "Richie Bendall <richiebendall@gmail.com>",
